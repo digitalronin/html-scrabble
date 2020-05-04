@@ -1,7 +1,4 @@
 {
     "port": 9093,
-    "baseUrl": "http://localhost:9093/",
-    "mailTransportConfig": {
-        "host": "localhost"
-    }
+    "baseUrl": "http://localhost:9093/"
 }
