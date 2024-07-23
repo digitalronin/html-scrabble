@@ -1,3 +1,12 @@
+run:
+	docker-compose up -d
+	sleep 2
+	docker-compose logs --follow
+
+stop:
+	docker-compose down
+
+# Development
 server:
 	node server.js
 

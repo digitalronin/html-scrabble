@@ -1,0 +1,16 @@
+services:
+  pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    environment:
+      - PORT=3000
+      - REDIS_URL=redis://redis-server:6379
+    ports:
+      - 3000:3000
+
+  redis-server:
+    image: redis
+    ports:
+    - 6379:6379
